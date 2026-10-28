@@ -15,6 +15,7 @@ async fn main() {
     let listener = tokio::net::TcpListener::bind(ADDR_SERVER).await.unwrap();
     info!("Axum is started on {}", ADDR_SERVER);
     info!("HI, PISTR");
+    info!("########!@#!@!#!################");
 
     axum::serve(listener, app).await.unwrap();
 }
