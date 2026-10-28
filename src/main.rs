@@ -20,5 +20,5 @@ async fn main() {
 
 async fn health_handler() -> &'static str {
     info!("[health_handler] get query");
-    "OK\n"
+    "OK!\n"
 }
