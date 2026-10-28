@@ -14,6 +14,7 @@ async fn main() {
         .route("/health", get(health_handler));
     let listener = tokio::net::TcpListener::bind(ADDR_SERVER).await.unwrap();
     info!("Axum is started on {}", ADDR_SERVER);
+    info!("HI, PISTR");
 
     axum::serve(listener, app).await.unwrap();
 }
